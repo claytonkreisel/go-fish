@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "go-fish"
+version = "0.1.0"
+description = ""
+authors = ["Clayton Kreisel <clayton.kreisel@equipmentshare.com>"]
+readme = "README.md"
+packages = [{include = "go_fish"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygame = "^2.5.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

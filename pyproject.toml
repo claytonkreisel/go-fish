@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["Clayton Kreisel <clayton.kreisel@equipmentshare.com>"]
 readme = "README.md"
-packages = [{include = "go_fish"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

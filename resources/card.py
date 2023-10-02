@@ -1,6 +1,8 @@
+import os
 from enum import Enum
 import pygame
 from .spritesheet import SpriteSheet
+from config import ASSETS_DIR
 
 
 class Suit(Enum):
@@ -30,7 +32,7 @@ class Card(object):
     def __init__(self, suit, value):
         self.suit = suit
         self.value = value
-        ss = SpriteSheet("assets/cards-sprite.png")
+        ss = SpriteSheet(os.path.join(ASSETS_DIR, "cards-sprite.png"))
         self.image = ss.image_at(
             (
                 (value.value - 1) * 71,
